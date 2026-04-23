@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MCP Infrastructure — Agent Runtime Governance Layer</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0a0a0f; color: #e2e8f0; }
+  .hero { padding: 80px 24px 60px; text-align: center; background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%); border-bottom: 1px solid #334155; }
+  .badge { display: inline-block; background: #6366f1; color: white; font-size: 12px; font-weight: 700; padding: 4px 12px; border-radius: 20px; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 20px; }
+  h1 { font-size: 2.5rem; font-weight: 800; color: #f8fafc; margin-bottom: 16px; line-height: 1.2; }
+  h1 span { color: #818cf8; }
+  .subtitle { font-size: 1.1rem; color: #94a3b8; max-width: 580px; margin: 0 auto 32px; line-height: 1.6; }
+  .cta { display: inline-flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
+  .btn { padding: 12px 24px; border-radius: 8px; font-weight: 600; text-decoration: none; font-size: 0.95rem; transition: opacity 0.2s; }
+  .btn-primary { background: #6366f1; color: white; }
+  .btn-secondary { background: #1e293b; color: #cbd5e1; border: 1px solid #334155; }
+  .btn:hover { opacity: 0.85; }
+  .stats { display: flex; justify-content: center; gap: 48px; padding: 40px 24px; border-bottom: 1px solid #1e293b; flex-wrap: wrap; }
+  .stat { text-align: center; }
+  .stat-num { font-size: 2rem; font-weight: 800; color: #818cf8; }
+  .stat-label { font-size: 0.85rem; color: #64748b; margin-top: 4px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; padding: 48px 24px; max-width: 1100px; margin: 0 auto; }
+  .card { background: #0f172a; border: 1px solid #1e293b; border-radius: 12px; padding: 24px; transition: border-color 0.2s; }
+  .card:hover { border-color: #6366f1; }
+  .card-cat { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
+  .cat-safety { color: #f87171; }
+  .cat-quality { color: #34d399; }
+  .cat-efficiency { color: #60a5fa; }
+  .cat-infra { color: #a78bfa; }
+  .cat-vertical { color: #fbbf24; }
+  .card h3 { font-size: 1rem; font-weight: 700; color: #f1f5f9; margin-bottom: 6px; }
+  .card p { font-size: 0.88rem; color: #64748b; line-height: 1.5; }
+  .card-links { margin-top: 16px; display: flex; gap: 8px; }
+  .tag { font-size: 11px; padding: 3px 8px; border-radius: 4px; background: #1e293b; color: #94a3b8; text-decoration: none; }
+  .tag:hover { background: #334155; }
+  footer { text-align: center; padding: 40px 24px; border-top: 1px solid #1e293b; color: #475569; font-size: 0.85rem; }
+  footer a { color: #64748b; text-decoration: none; margin: 0 12px; }
+  footer a:hover { color: #94a3b8; }
+  .section-title { text-align: center; font-size: 1.6rem; font-weight: 700; color: #f1f5f9; padding: 40px 24px 0; }
+  .section-sub { text-align: center; color: #64748b; font-size: 0.9rem; padding: 8px 24px 0; }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="badge">20 MCP Servers · Production Ready</div>
+  <h1>Agent Runtime <span>Governance Layer</span></h1>
+  <p class="subtitle">A complete infrastructure toolkit for AI agent systems. Safety, observability, cost control, compliance, and memory — everything your agents need to run reliably in production.</p>
+  <div class="cta">
+    <a href="https://github.com/mdfifty50-boop" class="btn btn-primary">Browse All Servers →</a>
+    <a href="https://smithery.ai/server/gcc-intelligence-mcp" class="btn btn-secondary">Try on Smithery</a>
+  </div>
+</div>
+
+<div class="stats">
+  <div class="stat"><div class="stat-num">20</div><div class="stat-label">MCP Servers</div></div>
+  <div class="stat"><div class="stat-num">5+</div><div class="stat-label">Registries</div></div>
+  <div class="stat"><div class="stat-num">MIT</div><div class="stat-label">License</div></div>
+  <div class="stat"><div class="stat-num">0</div><div class="stat-label">Config Required</div></div>
+</div>
+
+<h2 class="section-title">The Portfolio</h2>
+<p class="section-sub">Every layer of agent runtime infrastructure, covered.</p>
+
+<div class="grid">
+  <div class="card">
+    <div class="card-cat cat-safety">Safety</div>
+    <h3>agent-security-mcp</h3>
+    <p>Detects prompt injection, secret leakage, and malicious inputs before they reach your agent.</p>
+    <div class="card-links"><a href="https://github.com/mdfifty50-boop/agent-security-mcp" class="tag">GitHub</a><a href="https://npmjs.com/package/agent-security-mcp" class="tag">npm</a></div>
+  </div>
+  <div class="card">
+    <div class="card-cat cat-safety">Safety</div>
+    <h3>agent-guard-mcp</h3>
+    <p>Infinite loop detection, runaway cost prevention, and agent circuit breakers.</p>
+    <div class="card-links"><a href="https://github.com/mdfifty50-boop/agent-guard-mcp" class="tag">GitHub</a><a href="https://npmjs.com/package/agent-guard-mcp" class="tag">npm</a></div>
+  </div>
+  <div class="card">
+    <div class="card-cat cat-safety">Safety</div>
+    <h3>scope-guard-mcp</h3>
+    <p>Enforces hard boundaries in multi-agent systems. Prevents scope creep between agents.</p>
+    <div class="card-links"><a href="https://github.com/mdfifty50-boop/scope-guard-mcp" class="tag">GitHub</a><a href="https://npmjs.com/package/scope-guard-mcp" class="tag">npm</a></div>
+  </div>
+  <div class="card">
+    <div class="card-cat cat-safety">Safety</div>
+    <h3>secure-vault-mcp</h3>
+    <p>Agent-native secrets management. Agents store and retrieve credentials without hardcoding.</p>
+    <div class="card-links"><a href="https://github.com/mdfifty50-boop/secure-vault-mcp" class="tag">GitHub</a><a href="https://npmjs.com/package/secure-vault-mcp" class="tag">npm</a></div>
+  </div>
+  <div class="card">
+    <div class="card-cat cat-quality">Quality</div>
+    <h3>qc-validator-mcp</h3>
+    <p>Output quality validation for agent responses. Catches hallucinations and format violations.</p>
+    <div class="card-links"><a href="https://github.com/mdfifty50-boop/qc-validator-mcp" class="tag">GitHub</a><a href="https://npmjs.com/package/qc-validator-mcp" class="tag">npm</a></div>
+  </div>
+  <div class="card">
+    <div class="card-cat cat-quality">Quality</div>
+    <h3>domain-expertise-mcp</h3>
+    <p>Inject domain knowledge into any agent context. 50+ professional domains included.</p>
+    <div class="card-links"><a href="https://github.com/mdfifty50-boop/domain-expertise-mcp" class="tag">GitHub</a><a href="https://npmjs.com/package/domain-expertise-mcp" class="tag">npm</a></div>
+  </div>
+  <div class="card">
+    <div class="card-cat cat-quality">Quality</div>
+    <h3>compliance-shield-mcp</h3>
+    <p>EU AI Act compliance checking, GDPR audit trails, and regulatory alignment tools.</p>
+    <div class="card-links"><a href="https://github.com/mdfifty50-boop/compliance-shield-mcp" class="tag">GitHub</a><a href="https://npmjs.com/package/compliance-shield-mcp" class="tag">npm</a></div>
+  </div>
+  <div class="card">
+    <div class="card-cat cat-quality">Quality</div>
+    <h3>agent-reflexion-mcp</h3>
+    <p>Self-reflection and iterative improvement loops for agent reasoning quality.</p>
+    <div class="card-links"><a href="https://github.com/mdfifty50-boop/agent-reflexion-mcp" class="tag">GitHub</a><a href="https://npmjs.com/package/agent-reflexion-mcp" class="tag">npm</a></div>
+  </div>
+  <div class="card">
+    <div class="card-cat cat-efficiency">Efficiency</div>
+    <h3>token-lens-mcp</h3>
+    <p>Context window optimization and token usage analytics per agent session.</p>
+    <div class="card-links"><a href="https://github.com/mdfifty50-boop/token-lens-mcp" class="tag">GitHub</a><a href="https://npmjs.com/package/token-lens-mcp" class="tag">npm</a></div>
+  </div>
+  <div class="card">
+    <div class="card-cat cat-efficiency">Efficiency</div>
+    <h3>agent-costcenter-mcp</h3>
+    <p>Per-agent cost attribution, budget enforcement, and spend analytics.</p>
+    <div class="card-links"><a href="https://github.com/mdfifty50-boop/agent-costcenter-mcp" class="tag">GitHub</a><a href="https://npmjs.com/package/agent-costcenter-mcp" class="tag">npm</a></div>
+  </div>
+  <div class="card">
+    <div class="card-cat cat-efficiency">Efficiency</div>
+    <h3>agentic-observability-mcp</h3>
+    <p>Full agent tracing, latency profiling, and cost-per-tool-call monitoring.</p>
+    <div class="card-links"><a href="https://github.com/mdfifty50-boop/agent-observability-mcp" class="tag">GitHub</a><a href="https://npmjs.com/package/agentic-observability-mcp" class="tag">npm</a></div>
+  </div>
+  <div class="card">
+    <div class="card-cat cat-efficiency">Efficiency</div>
+    <h3>trace-forge-mcp</h3>
+    <p>Write-path trace ingestion and structured log forwarding for agent pipelines.</p>
+    <div class="card-links"><a href="https://github.com/mdfifty50-boop/trace-forge-mcp" class="tag">GitHub</a><a href="https://npmjs.com/package/trace-forge-mcp" class="tag">npm</a></div>
+  </div>
+  <div class="card">
+    <div class="card-cat cat-infra">Infrastructure</div>
+    <h3>agent-memorystore-mcp</h3>
+    <p>Persistent agent memory with semantic search. Agents remember across sessions.</p>
+    <div class="card-links"><a href="https://github.com/mdfifty50-boop/agent-memory-mcp" class="tag">GitHub</a><a href="https://npmjs.com/package/agent-memorystore-mcp" class="tag">npm</a></div>
+  </div>
+  <div class="card">
+    <div class="card-cat cat-infra">Infrastructure</div>
+    <h3>mcp-registry-mcp</h3>
+    <p>Server health monitoring, deduplication, and registry management for MCP fleets.</p>
+    <div class="card-links"><a href="https://github.com/mdfifty50-boop/mcp-registry-mcp" class="tag">GitHub</a><a href="https://npmjs.com/package/mcp-registry-mcp" class="tag">npm</a></div>
+  </div>
+  <div class="card">
+    <div class="card-cat cat-infra">Infrastructure</div>
+    <h3>a2a-bridge-mcp</h3>
+    <p>Agent-to-agent delegation via the A2A protocol. Route tasks between specialized agents.</p>
+    <div class="card-links"><a href="https://github.com/mdfifty50-boop/a2a-bridge-mcp" class="tag">GitHub</a><a href="https://npmjs.com/package/a2a-bridge-mcp" class="tag">npm</a></div>
+  </div>
+  <div class="card">
+    <div class="card-cat cat-infra">Infrastructure</div>
+    <h3>agent-replay-mcp</h3>
+    <p>Session replay and debugging for agent workflows. Reproduce any failure exactly.</p>
+    <div class="card-links"><a href="https://github.com/mdfifty50-boop/agent-replay-mcp" class="tag">GitHub</a><a href="https://npmjs.com/package/agent-replay-mcp" class="tag">npm</a></div>
+  </div>
+  <div class="card">
+    <div class="card-cat cat-infra">Infrastructure</div>
+    <h3>agentic-auth-proxy-mcp</h3>
+    <p>OAuth and API key proxy for agents. Centralized auth without exposing credentials.</p>
+    <div class="card-links"><a href="https://github.com/mdfifty50-boop/mcp-auth-proxy" class="tag">GitHub</a><a href="https://npmjs.com/package/agentic-auth-proxy-mcp" class="tag">npm</a></div>
+  </div>
+  <div class="card">
+    <div class="card-cat cat-infra">Infrastructure</div>
+    <h3>agent-workflow-mcp</h3>
+    <p>Orchestration primitives for multi-step agent workflows with checkpointing.</p>
+    <div class="card-links"><a href="https://github.com/mdfifty50-boop/agent-workflow-mcp" class="tag">GitHub</a><a href="https://npmjs.com/package/agent-workflow-mcp" class="tag">npm</a></div>
+  </div>
+  <div class="card">
+    <div class="card-cat cat-infra">Infrastructure</div>
+    <h3>docx-forge-mcp</h3>
+    <p>Professional document generation from agent output. DOCX, PDF, and structured formats.</p>
+    <div class="card-links"><a href="https://github.com/mdfifty50-boop/docx-forge-mcp" class="tag">GitHub</a><a href="https://npmjs.com/package/docx-forge-mcp" class="tag">npm</a></div>
+  </div>
+  <div class="card">
+    <div class="card-cat cat-vertical">GCC Vertical</div>
+    <h3>gcc-intelligence-mcp</h3>
+    <p>GCC regulatory intelligence — ZATCA compliance, VAT rules, UAE Corporate Tax, Saudi Vision 2030 data.</p>
+    <div class="card-links"><a href="https://github.com/mdfifty50-boop/gcc-intelligence-mcp" class="tag">GitHub</a><a href="https://npmjs.com/package/gcc-intelligence-mcp" class="tag">npm</a></div>
+  </div>
+</div>
+
+<footer>
+  <p>MCP Infrastructure — Agent Runtime Governance Layer</p>
+  <p style="margin-top: 12px;">
+    <a href="/terms.html">Terms of Service</a>
+    <a href="/privacy.html">Privacy Policy</a>
+    <a href="/refund.html">Refund Policy</a>
+    <a href="https://github.com/mdfifty50-boop">GitHub</a>
+  </p>
+  <p style="margin-top: 16px; font-size: 0.75rem;">© 2026 MCP Infrastructure. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
